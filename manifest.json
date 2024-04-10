@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "My Simple Extension",
+  "version": "1.0",
+  "description": "A simple Chrome extension",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "https://api.alquran.cloud/*"
+  ],
+  "content_security_policy": "script-src 'self' https://api.alquran.cloud/*; object-src 'self';",
+  "background" : {
+    "service_worker": "background.js"
+  }
+}
