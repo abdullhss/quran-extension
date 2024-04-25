@@ -1,0 +1,129 @@
+*{
+    border-radius: 5px;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: antiquewhite;
+    font-family: "ClashDisplay-Regular";
+    width: 80vh;
+    height: 90vh;
+    margin: 0 ;
+    padding: 5px;
+}
+#title{
+    font-family:'CabinetGrotesk-Bold';
+    width: 80vh;
+    height: 10vh;
+    margin-block:5vh;
+    top: 5vh;
+    left: 5vh;
+    font-size: 10vh ;
+    font-weight: 800;
+    line-height: 10vh;
+    text-align: left;
+}
+.option{
+    background-color: #001C36;
+    appearance: none;
+    color: #FFF ;
+    width: 80vh;
+    height: 10vh;
+    font-weight: 400;
+    font-size: 5vh;
+    text-align: center;
+}
+.fromTo{
+    background-color: #001C36;
+    appearance: none;
+    color: #FFF ;
+    width: 10vh;
+    height: 10vh;
+    font-weight: 400;
+    font-size: 5vh;
+    text-align: center;
+}
+.ChooseAya{
+    width: 100vh;
+    height: 10vh;
+    top: 5vh;
+    left: 50px;
+    font-size: 4vh ;
+    font-weight: 700;
+    letter-spacing: 0.2vh;
+    line-height: 4vh;
+    text-align: left;
+}
+.rebeat{
+    display: inline-block;
+    color: #FFF;
+    background-color: #001C36;
+    text-align: center;
+    font-weight: 400;
+    font-size: 3.5vh;
+    letter-spacing: 0.2vh;
+    width: 25vh;
+    padding: 3vh;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.rebeatNumber , .inc{
+    color: #FFF;
+    background-color: #001C36;
+    padding: 2.5vh;
+    width: 8vh;
+    font-size: 4vh;
+    font-weight: 700;
+    text-align: center;
+    align-items: center;
+    border: none;
+    vertical-align: middle;
+}
+.inc{
+    cursor: pointer;
+}
+.rebeatNumber::-webkit-inner-spin-button {
+        appearance: none;
+}
+
+.btns{
+    width: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#StartBtn , #StopBtn , #playBtn{
+    color: #FFF;
+    font-size: 4vh;
+    font-weight: 400;
+    font-family: 'CabinetGrotesk-Normal';
+    letter-spacing: 0.5vh;
+    border: none;
+    padding: 1vh;
+    width: 18vh;
+    cursor: pointer;
+}
+#StartBtn{
+    background-color: #328016;
+}
+#StopBtn{
+    background-color: #FE3D00;
+}
+#playBtn{
+    background-color: #001C36;
+}
+
+.copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    color: #777;
+}
+.copy:hover {
+    color: #009688;
+}

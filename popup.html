@@ -3,56 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="font1/css/cabinet-grotesk.css">
+    <link rel="stylesheet" href="font2/css/clash-display.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
-    <div>
-        <h1 id="title">quran extension</h1>
+<body class="animate__animated ">
+    <div class="container">
+        <h1 id="title">Quran Extension</h1>
         <form action="">
-            
-            <label for="shekh">Choose a shekh :</label>
-            <select id="shekh" name="shekh">
-                <option value="shekh">shekh</option>
+
+            <select name="ChooseSurah" id="ChooseSurah" class="option">
+                <option value="surah">Choose Surah</option>
             </select>
-        <br><br>
+            <br><br>
+
+            <select id="shekh" name="shekh" class="option">
+                <option value="shekh">Choose Sheikh</option>
+            </select>
         
-        <label for="ChooseSurah">Choose Surah:</label>
-        <select name="ChooseSurah" id="ChooseSurah">
-            <option value="surah">surah</option>
-        </select>
 
         <br><br>
         
-        <label for="fromAya">Choose starts Aya:</label>
-        <select name="fromAya" id="fromAya">
+        <label for="fromAya" class="ChooseAya">Surah starts at</label>
+        <select name="fromAya" id="fromAya" class="fromTo">
             <option value="1">1</option>
         </select>
 
-        <br><br>
-        <label for="ToAya">Choose end Aya:</label>
-        <select name="ToAya" id="ToAya">
+        <label class="ChooseAya" for="ToAya">ends at</label>
+        <select name="ToAya" id="ToAya" class="fromTo">
             <option value="1">1</option>
         </select>
         <br><br>
 
-        <label for="ayaRebeat">Aya rebeat :</label>
-        <input type="number" id="ayaRebeat" name="ayaRebeat" value="1" min="1" step="1">
+        <span class="rebeat">Rebeat Ayah</span>
+        <input type="number" id="ayaRebeat" name="ayaRebeat" class="rebeatNumber" value="1" min="1" step="1">
+        <span class="inc" id="incForAya">^</span>
         <br><br>
         
-        <label for="blockRebeat">block rebeat :</label>
-        <input type="number" id="blockRebeat" name="blockRebeat" value="1" min="1" step="1">
+        <span  class="rebeat">Rebeat Path</span>
+        <input type="number" id="blockRebeat" name="blockRebeat" class="rebeatNumber" value="1" min="1" step="1">
+        <span class="inc" id="incForBlock">^</span>
         <br><br>
 
-        <input type="button" value="Start" id="StartBtn">
+        <div class="btns">
+            <input type="button" value="Start" id="StartBtn">
 
-        <input type="button" value="Stop" id="StopBtn">
-        
-        <input type="button" value="play" id="playBtn">
-
-        </form>
+            <input type="button" value="Stop" id="StopBtn">
+            
+            <input type="button" value="Play" id="playBtn">
+        </div>
+    </form>
+    <a class="copy" href="https://github.com/abdullhss" target="_blank">&copy; <span id="currentYear"></span> Created By : Abdullah Yosry</a>
     </div>
 
     <script src="js.js"></script>
-
+    <script src="background.js"></script>
 </body>
 </html>
