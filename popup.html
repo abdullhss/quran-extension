@@ -17,26 +17,28 @@
         <form action="">
 
             <select name="ChooseSurah" id="ChooseSurah" class="option">
-                <option value="surah">Choose Surah</option>
+                <option value="surah">Choose a Surah</option>
             </select>
             <br><br>
 
             <select id="shekh" name="shekh" class="option">
-                <option value="shekh">Choose Sheikh</option>
+                <option value="shekh">Choose a Sheikh</option>
             </select>
         
 
         <br><br>
-        
-        <label for="fromAya" class="ChooseAya">Surah starts at</label>
-        <select name="fromAya" id="fromAya" class="fromTo">
-            <option value="1">1</option>
-        </select>
+        <div class="startFromTo">
+            <label for="fromAya" class="ChooseAya">Surah starts at</label>
+            <select name="fromAya" id="fromAya" class="fromTo">
+                <option value="1">1</option>
+            </select>
 
-        <label class="ChooseAya" for="ToAya">ends at</label>
-        <select name="ToAya" id="ToAya" class="fromTo">
-            <option value="1">1</option>
-        </select>
+            <label class="ChooseAya" for="ToAya">ends at</label>
+            <select name="ToAya" id="ToAya" class="fromTo">
+                <option value="1">1</option>
+            </select>
+            
+        </div>
         <br><br>
 
         <span class="rebeat">Rebeat Ayah</span>
@@ -57,8 +59,9 @@
             <input type="button" value="Play" id="playBtn">
         </div>
     </form>
-    <a class="copy" href="https://github.com/abdullhss" target="_blank">&copy; <span id="currentYear"></span> Created By : Abdullah Yosry</a>
-    </div>
+    <a class="copy" id="abdullah" href="https://github.com/abdullhss" target="_blank">&copy; <span id="currentYear"></span> Created By : Abdullah Yosry</a>
+    <a class="copy" href="https://www.linkedin.com/in/yusuf-salah" target="_blank">&copy; <span id="currentYear1"></span> Designed By: Yusuf Salah</a>
+</div>
 
     <script src="js.js"></script>
     <script src="background.js"></script>
