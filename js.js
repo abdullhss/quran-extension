@@ -82,14 +82,6 @@ let stopBtn = document.getElementById("StopBtn");
 let playBtn = document.getElementById("playBtn")
 
 startBtn.addEventListener("click" , () =>{
-    console.log(shekh.value );
-    console.log(ChooseSurah.value);
-    console.log(fromAya.value);
-    console.log(ayaRebeat.value);
-    console.log(blockRebeat.value);
-    // start( shekh.value ,ChooseSurah.value ,fromAya.value , ToAya.value , ayaRebeat.value)
-    
-
     chrome.runtime.sendMessage({ action: 'startSound', shekh : shekh.value , ChooseSurah : ChooseSurah.value , fromAya:fromAya.value,ToAya:ToAya.value ,ayaRebeat:ayaRebeat.value , blockRebeat:blockRebeat.value });
 })
 
